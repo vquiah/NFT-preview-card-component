@@ -1,0 +1,119 @@
+
+*{
+    font-family: 'Arima', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue1: hsl(217, 54%, 11%);
+    --Verydarkblue2: hsl(216, 50%, 16%);
+    --Verydarkblue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--Verydarkblue2);
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    width: 350px;
+    margin:40px auto;
+    background:var(--Verydarkblue3);
+    border-radius: 10px;
+}
+.wrapper{
+    padding: 0 20px;
+}
+
+.main-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+    
+}
+.img-container{
+    width: 310px;
+    height: 260px;
+    margin: 25px auto;
+    border-radius: 15px; 
+    position: relative;
+}
+.layover{
+    position: absolute;
+    background: var(--Cyan);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    padding: 80px;
+    opacity: 0;
+}
+.layover:hover{
+    opacity: .4;
+}
+
+h1{
+    color:var(--White);
+    margin-bottom: 15px;
+}
+p{
+    color: var(--Softblue);
+    font-size: 18px;
+}
+.price-day{
+margin: 18px 0;
+   display: flex;
+   justify-content: space-between;
+   
+   
+}
+
+.price-day img{
+    margin-right: 5px;
+    vertical-align:middle;
+}
+.price-day span:first-child{
+    color:var(--Cyan);
+}
+.price-day span:last-child{
+    color:var(--Softblue);
+}
+.border{
+    border-top: 1px solid var(--Softblue) ;
+    margin: 15px 0;
+}
+.creator{
+    padding: 0 5px;
+    margin: 15px 0;
+    display:table;  
+}
+.creator img{
+    width: 35.5px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    vertical-align:middle;
+}
+
+.creator span{
+    color: var(--Softblue);
+    
+}
+.creator a{
+    color: var(--White);
+    margin-left: 5px;
+    text-decoration: none;
+}
+.creator a:hover, h1:hover{
+    color:var(--Cyan)
+}
